@@ -1,21 +1,26 @@
 import React from "react";
 
 function App() {
+
+  const content = (
+    <div>
+      <h2 style={{ color: "blue" }}>Welcome to JSX</h2>
+
+      <p>JSX allows us to write HTML inside JavaScript</p>
+
+      <ul>
+        <li>Easy to read</li>
+        <li>Looks like HTML</li>
+        <li>Used in React components</li>
+      </ul>
+    </div>
+  );
+
   return (
     <div>
-      <h2>HTML Rendering in React</h2>
+      <h1>Writing Markup with JSX</h1>
 
-      <div>
-        <h3 style={{ color: "blue" }}>Welcome to React</h3>
-
-        <p>This HTML content is rendered using JSX.</p>
-
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
-      </div>
+      {content}
     </div>
   );
 }
